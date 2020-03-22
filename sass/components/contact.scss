@@ -1,0 +1,50 @@
+.contact-info {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .4);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  opacity: 0.8;
+  border: solid 1px rgba($dark, .4);
+  h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
+.contact-content {
+  .icons {
+    font-size: 3rem;
+    padding: 2rem;
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+  }
+  p {
+    line-height: 2.5;
+    @include respond(tab-port) {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+  }
+}
+
+.contact-icons {
+  font-size: 1.6rem;
+  transition: color .3s;
+  @include respond(tab-port) {
+    display: none;
+  }
+  a {
+    &:hover {
+      color: rgba($white-color, .6) !important;
+    }
+  }
+}
+
+.contact-container {
+  margin-left: 2rem;
+  @include respond(tab-port) {
+    margin-left: 0rem;
+  }
+}

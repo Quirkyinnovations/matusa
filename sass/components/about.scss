@@ -1,0 +1,36 @@
+#about{
+    .row{
+        .col-1-of-2{
+         height: 25vh;
+        h2{
+            font-size: 1.7rem;
+        }
+        .content{
+            transition: all 0.3s;
+            padding: 25px 10px 20px;
+      
+            &:hover{
+                box-shadow: -10px 10px 5px -5px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+        }
+        
+        .about-images{
+
+            .container{
+                height: 60vh;
+                transition: .5s;
+
+                img{
+                    transition: .5s;
+
+                    &:hover{
+                        
+                        transform: scale(1.2);
+                    }
+                }
+                
+            }
+        }
+    }

@@ -1,0 +1,47 @@
+.home {
+    &_container {
+        position: relative;
+        width: 100%;
+    }
+    &_videos {
+        &__content {
+            .box-v {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 180px;
+                border: .5px solid rgba($dark, .5);
+                border-radius: .4rem;
+                box-shadow: $box-shadow-dark;
+                video {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.home_videos_podcasts {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: .4%;
+        height: 100%;
+        background: rgba(33, 31, 32, 0.1);
+        left: -18%;
+        z-index: 999;
+        top: 20%;
+        @include respond(tab-port) {
+            width: 0;
+        }
+    }
+    .home_videos {
+        &__content {
+            &--link {
+                margin-top: 3rem !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+.footer {
+  h2 {
+    position: relative;
+    font-size: 1.6rem !important;
+    @include respond(tab-port) {
+      font-size: 1.2rem !important;
+    }
+    &::after {
+      width: 15%;
+      content: "";
+      left: 0%;
+      position: absolute;
+      top: 71%;
+      border-bottom: 0.5rem solid rgba($dark, 0.9);
+    }
+  }
+  background: $white-color;
+  line-height: 1.9;
+  &__row {
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__details {
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    @include respond(tab-port) {
+      font-size: 1.1rem;
+    }
+    p {
+      .icon-location {
+        font-size: 1.8rem;
+      }
+      span {
+        padding-left: 0.5rem;
+      }
+      i {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        color: rgba($dark, 0.6);
+      }
+      .icon-avenue {
+        margin-left: 2.8rem;
+      }
+    }
+  }
+  &__copyright {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    @include respond(tab-port) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    h2 {
+      text-align: center;
+      @include respond(tab-port) {
+        text-align: left !important;
+      }
+      &::after {
+        left: 35% !important;
+        top: 71% !important;
+        @include respond(tab-port) {
+          left: 0% !important;
+        }
+      }
+    }
+    &--logo {
+      width: 85px;
+      width: 85px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+      @include respond(tab-port) {
+        margin: 0;
+      }
+    }
+    &--content {
+      font-size: 1.2rem;
+      text-align: center;
+      @include respond(tab-port) {
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+  }
+  &__widgets {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    @include respond(tab-port) {
+      text-align: left;
+      font-size: 1.4rem;
+    }
+    a {
+      color: $dark !important;
+      background: rgba($dark, 0.6);
+      border-radius: 100%;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      border: 0.1rem solid rgba($dark, 0.1);
+      transition: all 650ms ease;
+      animation: transition 0.5s;
+      &:hover {
+        background: rgba($dark, 0.6);
+        border: 0.1rem solid rgba($dark, 0.1);
+      }
+      i {
+        position: relative;
+        color: $white-color;
+        transition: all 650ms ease;
+        animation: transition 0.5s;
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+    h2 {
+      margin-bottom: 1rem !important;
+      &::after {
+        left: 25.2% !important;
+        top: 71% !important;
+        @include respond(tab-port) {
+          left: 0% !important;
+        }
+      }
+    }
+  }
+  .designBy {
+    text-align: center;
+    border-top: 0.6px solid rgba($dark, 0.6);
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    @include respond(tab-port) {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}

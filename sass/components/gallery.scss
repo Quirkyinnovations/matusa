@@ -1,0 +1,11 @@
+.gal-container {
+    margin-left: 2rem;
+    padding-top: 4rem;
+    @include respond(tab-port) {
+        margin-left: 0rem;
+    }
+}
+
+#gallery {
+    margin-bottom: 2rem;
+}

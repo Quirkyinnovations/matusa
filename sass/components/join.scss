@@ -1,0 +1,117 @@
+#joinus {
+  padding-bottom: 3rem !important;
+  @include respond(tab-port) {
+    padding-bottom: 11rem !important;
+  }
+}
+
+.joinus-info {
+  line-height: 2;
+  p {
+    margin-left: 1.5rem;
+    @include respond(tab-port) {
+      margin-left: 0;
+    }
+  }
+  @include respond(tab-port) {
+    line-height: 1.6;
+    font-size: 13px !important;
+    text-align: center !important;
+    margin-top: -1rem;
+  }
+}
+
+.joinus__list {
+  ul {
+    // list-style: decimal;
+    margin-left: 2rem;
+    list-style-type: decimal;
+    li {
+      font-size: 1.3rem;
+      @include respond(tab-port) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.declaration-container {
+  height: 40vh;
+  transform: translateY(-11rem);
+  width: 65%;
+  @include respond(tab-land) {
+    width: 100%;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+    transform: translateY(0rem);
+  } // terms and conditions
+  .terms-conditions {
+    position: relative;
+    label {
+      a {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $primary-color;
+        font-style: italic;
+        transform: all .3s;
+        &:hover {
+          color: rgba($dark, .6) !important;
+          border-bottom: 1px solid rgba($dark, .6);
+        }
+      }
+    }
+    &_content {
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      overflow: hidden;
+      height: 18px;
+      transition: all .3s ease-in-out; // animation: transition .5s;
+      &.active-terms {
+        height: 200px;
+        @include respond(tab-port) {
+          overflow-y: scroll;
+        }
+      }
+      @include respond(tab-port) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.benefits {
+  h3 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+.member-icons {
+  width: 71.5%;
+  transform: translateY(-12rem);
+  @include respond(tab-port) {
+    width: 100%;
+    transform: translateY(0);
+  }
+}
+
+.select-items select {
+  background: $white-color;
+  color: $dark;
+  padding: 15px;
+  height: 45px;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: none;
+  margin-bottom: 4px;
+}
+
+.u-margin-right {
+  margin-right: 2rem !important;
+}

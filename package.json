@@ -1,0 +1,11 @@
+{
+  "name": "matusa",
+  "version": "1.0.0",
+  "description": "Municipal and Allied Trade Union of South Africa",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss public/css/main.css --watch"
+  },
+  "author": "Quirky Innovations",
+  "license": "ISC"
+}

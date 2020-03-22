@@ -1,0 +1,147 @@
+// slider with skew
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  height: 75vh;
+  .slider-carousel__item {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    .page-slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient( 135deg, rgba($primary-color, 0.3) 50%, rgba($dark, 0.8) 100%);
+      &__half {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%; // @include respond(tab-port) {
+        //   width: 59%;
+        // }
+        // @include respond(tab-port) {
+        //   width: 70%;
+        // }
+        &--left {
+          left: 0;
+          position: relative; //   &::before {
+          //     position: absolute;
+          //     content: "";
+          //     width: 10%;
+          //     height: 100%;
+          //     left: 40%;
+          //     top: 0;
+          //     z-index: 9999;
+          //     background: linear-gradient(
+          //       135deg,
+          //       rgba($primary-color, 1) 0%,
+          //       rgba($dark, 0.3) 100%
+          //     );
+          //   }
+          //   border: 1px solid $white-color;
+          //   @include respond(tab-port) {
+          //     left: -1%;
+          //   }
+          //   @include respond(phone) {
+          //     left: -17%;
+          //   }
+        }
+        &--right {
+          left: 50%; //   border-top-left-radius: 35%;
+          //   border-bottom-left-radius: 35%;
+          //   border: 1px solid $white-color;
+          //   @include respond(tab-port) {
+          //     left: 53%;
+          //   }
+        }
+      }
+      &__circled {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( 135deg, rgba($dark, 0.9) 0%, rgba($white-color, 0.8) 100%);
+        &.right {
+          //   border-top-left-radius: 60%;
+          //   border-bottom-left-radius: 60%;
+          //   width: 887px;
+        }
+        &_content {
+          position: absolute;
+          left: 20%;
+          top: 20%;
+          width: 60%;
+          color: $white-color;
+          font-size: 1.5rem;
+          @include respond(tab-port) {
+            font-size: 1.2rem;
+            top: 10%;
+          }
+          &.contact {
+            position: absolute;
+            left: 8% !important;
+            top: 6% !important;
+            width: 85% !important;
+            color: #ffffff;
+            font-size: 1.4rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-slide__heading {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-align: center;
+  @include respond(tab-port) {
+    font-size: 1.3rem;
+  }
+  &.contact-h2 {
+    text-align: left !important;
+  }
+}
+
+.page-slide__description {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  @include respond(tab-port) {
+    font-size: 1.1rem;
+  }
+}
+
+.page-slide__link {
+  color: $primary-color;
+}
+
+// slick arrow custom
+.slick-prev:before,
+.slick-next:before {
+  color: rgba($dark, 0.6) !important;
+  font-size: 1.7rem !important;
+}
+
+.slick-prev {
+  // top: -3rem !important;
+  // left: 87% !important;
+  // transform: translateY(10%) !important; 
+  // left: -37px !important;
+  // @include respond(tab-port) {
+  //   display: none !important;
+  // }
+}
+
+.slick-next {
+  // top: -3rem !important;
+  // left: 93% !important;
+  // transform: translateY(10%) !important;
+  // @include respond(tab-port) {
+  //   display: none !important;
+  // }
+}
