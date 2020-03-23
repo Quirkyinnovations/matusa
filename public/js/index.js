@@ -15,8 +15,10 @@ $(document).ready(function() {
     }
     $(item).on("click", function(e) {
       e.preventDefault();
+
       var content = e.target.dataset.content;
       var id = e.target.id;
+
       switch (id) {
         case "principles":
           $("#content").load(content);
@@ -79,5 +81,16 @@ $(document).ready(function() {
 
   $(".close-toggle").click(function() {
     $(".nav-list-mobile").removeClass("active-list");
+  });
+
+  const allLinks = $("ul.nav-list-matusa li");
+  console.log(allLinks);
+  $(allLinks).each(function(i, el) {
+    $(el).click(function(e) {
+      $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+    });
   });
 });

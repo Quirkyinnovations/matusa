@@ -1044,7 +1044,7 @@ label {
 .top__header_menu_container li:not(:last-child) {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
-.top__header_menu_container li:hover, .top__header_menu_container li.active, .top__header_menu_container li:focus, .top__header_menu_container li:visited {
+.top__header_menu_container li.active, .top__header_menu_container li:focus, .top__header_menu_container li:visited {
   background: #ef4a41;
   border-right: 1px solid rgba(239, 74, 65, 0.5);
 }
